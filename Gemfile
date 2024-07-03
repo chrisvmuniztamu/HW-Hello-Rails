@@ -43,6 +43,8 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem 'pg', '~> 1.2'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -68,6 +70,3 @@ group :test do
   gem "selenium-webdriver"
 end
 
-group :production do
-  gem 'pg', '~> 1.2'
-end
